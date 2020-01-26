@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[13]:
+# In[1]:
 
 
 import json
 import os
+
 import requests
 from datetime import datetime
 from flask import Flask,request,make_response
@@ -54,13 +55,4 @@ if __name__ == '__main__':
     print('starting app on port %d'%port)
     app.run(debug=False,port=port,host='0.0.0.0')
     
-
-
-# In[20]:
-
-
-from datetime import datetime
-x='2020-01-26 05:30:00'
-   
-datetime.fromisoformat(x).timestamp()
 
